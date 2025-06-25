@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:golden_truck_decor/core/router/app_router.dart';
+import 'package:golden_truck_decor/core/theme/app_theme.dart';
 
 void main() {
   runApp(const ProviderScope(child: GoldenTruckDecorApp()));
@@ -17,9 +18,7 @@ class GoldenTruckDecorApp extends StatelessWidget {
       title: 'GoldenTruckDecor',
       debugShowCheckedModeBanner: false,
       routerConfig: goRouter,
-      theme: ThemeData(
-        primarySwatch: Colors.amber,
-      ),
+      theme: AppTheme.light,
     );
   }
 }

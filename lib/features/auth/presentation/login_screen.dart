@@ -1,6 +1,7 @@
 // مسیر: lib/src/features/auth/presentation/login_screen.dart
 
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -44,7 +45,11 @@ class LoginScreen extends StatelessWidget {
                 },
                 child: const Text('ورود'),
               ),
-            )
+            ),
+            const SizedBox(height: 24),
+            TextButton(
+                onPressed: () => context.go('/signup'),
+                child: const Text('ایجاد حساب کاربری')),
           ],
         ),
       ),
