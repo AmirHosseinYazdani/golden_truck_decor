@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../data/fake_products.dart';
 import '../models/product_model.dart';
 import '../widgets/product_tile.dart';
-import 'product_detail_page.dart';
 
 class ProductListPage extends StatefulWidget {
   const ProductListPage({super.key});
@@ -81,13 +80,7 @@ class _ProductListPageState extends State<ProductListPage> {
               ),
               itemBuilder: (context, index) {
                 final product = filteredProducts[index];
-                return GestureDetector(
-                  onTap: () {
-                    Navigator.of(context).push(MaterialPageRoute(
-                        builder: (_) => ProductDetailPage(product: product)));
-                  },
-                  child: ProductTile(product: product),
-                );
+                return ProductTile(product: product);
               },
             ),
           ),
