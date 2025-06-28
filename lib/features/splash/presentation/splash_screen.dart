@@ -15,7 +15,7 @@ class _SplashScreenState extends State<SplashScreen> {
 
     // تاخیر 2 ثانیه‌ای و سپس رفتن به صفحه لاگین
     Future.delayed(const Duration(seconds: 2), () {
-      context.go('/login');
+      context.go('/products');
     });
   }
 

@@ -1,5 +1,3 @@
-// فایل: lib/main.dart
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:golden_truck_decor/core/router/app_router.dart';
